@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <form class="form">
-      <input type="text" name="query" placeholder="Search images..." />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоди</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #weather-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Прогноз погоди</h1>
+    <input type="text" id="city-input" placeholder="Введіть назву міста">
+    <button id="get-weather-btn">Отримати прогноз</button>
+    <div id="weather-container"></div>
 
-      <button type="submit">Search</button>
-    </form>
-
-    <span class="loader"></span>
-
-    <ul class="gallery"></ul>
-    <button type="button" class="load-more">Load more</button>
-    <script src="./main.js" type="module"></script>
-    <!-- <script src="./js/pixabay-api.js"></script> -->
-
-    <!-- <script src="./js/render-functions.js" type="module"></script> -->
-  </body>
+    <script src="./main.js"></script>
+</body>
 </html>
